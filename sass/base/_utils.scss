@@ -1,0 +1,70 @@
+.body {
+    font-family: $common-font;
+    letter-spacing: 0.02em;
+    background-color: $primary-bg-color;
+    margin: 0;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.list 
+{ list-style: none;
+color: $text-color
+ }
+
+ .hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.links {
+    text-decoration: none;
+}
+
+
+// p { margin: 0;}
+
+// img { display: block;}
+
+/* .inst {
+    background-image: url(../images/instagram.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 44px;
+    height: 44px;
+}
+.twit {
+    background-image: url(../images/twitter.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 44px;
+    height: 44px;
+}
+
+.fb {
+    background-image: url(../images/facebook.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 44px;
+    height: 44px;
+}
+
+.linkedin {
+    background-image: url(../images/linkedin.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 44px;
+    height: 44px;
+} */

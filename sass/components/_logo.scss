@@ -1,0 +1,26 @@
+
+.logo { 
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    color: $accent-color; 
+    text-decoration: none;
+    font-family: $logo-font;
+    letter-spacing: 0.03em;
+    font-weight: $bold;
+    font-size: $logo-text;
+}
+
+.footer-logo { 
+    display: block;
+    margin-bottom: 20px;
+    color: $accent-color; 
+    text-decoration: none;
+    font-family: $logo-font;
+    letter-spacing: 0.03em;
+    font-weight: $bold;
+    font-size: $logo-text;
+}
+
+.studio-bl { color: $black-color ;}
+.studio-wh { color: $primary-bg-color;}

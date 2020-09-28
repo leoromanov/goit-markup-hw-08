@@ -1,0 +1,30 @@
+.clients__list {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    justify-content: space-between;
+}
+
+.clients__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 90px;
+    border: 1px solid $network-color;
+    box-sizing: border-box;
+    border-radius: 4px;
+    transition: border $transition;
+
+    &:hover .clients__icon {
+        fill: $accent-color;
+    }
+
+    &:focus .clients__icon {
+        fill: $accent-color;
+    }
+
+    &:hover,
+    &:focus {
+        border: 1px solid $accent-color
+    }}

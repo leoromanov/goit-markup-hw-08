@@ -1,0 +1,36 @@
+.working {
+    display: flex;
+    padding: 0;
+    /* padding-bottom: 94px; */
+    margin: 0;
+}
+
+.working__list {
+    width: 370px;
+    position: relative;
+    list-style: none;
+
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
+}
+
+.working__text {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 370px;
+    height: 70px;
+    background-color: rgba(47, 48, 58, 0.8);
+    font-style: normal;
+    font-weight: $bold;
+    font-size: $common-text;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: $primary-bg-color;
+}

@@ -1,0 +1,40 @@
+.team__networks-list {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    width: 206px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 30px;
+    margin-top: 16px;
+    padding: 0;
+}
+.team__network-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    transition: background-color $transition; 
+
+    &:hover,
+    &:focus {
+        background-color: $accent-color;
+        border-radius: 50%;
+    }
+
+    &:hover .team__network-icon,
+    &:focus .team__network-icon {
+        fill: $primary-bg-color;
+    }
+}
+
+.team__network-icon {
+    width: 20px;
+    height: 20px;
+    fill: $icon-color;
+    transition: fill $transition;
+    /* padding: 12px; */
+}
+

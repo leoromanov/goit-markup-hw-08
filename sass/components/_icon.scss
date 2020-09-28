@@ -1,0 +1,29 @@
+
+.modal__icon {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    left: 12px;
+    top: 50%;
+    transition: fill $transition;
+
+    &:focus ~ .modal__icon {
+        fill: $accent-color;
+    }
+}
+.advantage__icon {
+    width: 70px;
+}
+
+.clients__icon {
+    /* width: 88px; */
+    fill: $network-color;
+    transition: fill $transition;
+}
+
+.footer-join__icon {
+    fill: $primary-bg-color;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}

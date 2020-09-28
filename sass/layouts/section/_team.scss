@@ -1,0 +1,38 @@
+.team { 
+    background: $secondary-bg-color;
+    padding-bottom: 94px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.team__list {
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.team__list-piece {
+    width: 270px;
+    background-color: $primary-bg-color;
+    text-align: center;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    list-style: none;
+    color: $text-color;
+}
+
+.team__list-piece:not(:last-child) {
+    margin-right: 30px;
+}
+
+.team__item {
+padding-top: 30px;
+}
+
+
+.team__member { 
+    color: $heading-color;
+    margin: 0px 0px 10px;
+    /* margin-top: 30px; */
+    margin-bottom: 10px;
+}
+

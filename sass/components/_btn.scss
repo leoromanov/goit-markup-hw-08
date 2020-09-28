@@ -1,0 +1,99 @@
+.footer-form__button {
+    width: 200px;
+    height: 50px;
+    // @include font($btn-text, 1.87, $bold);
+    font-size: $btn-text;
+    font-weight: 700;
+    line-height: 1.87;
+    /* identical to box height, or 30px */
+    letter-spacing: 0.06em;
+    padding: 0;
+    background-color: $accent-color;
+    color: $primary-bg-color;
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+
+}
+
+.footer-form__button-icon {
+    display: inline-block;
+    margin-left: 10px;
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+}
+
+.hero__button { 
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 32px;
+    font-style: normal;
+    font-weight: $bold;
+    font-size: $btn-text;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    text-decoration: none;
+    transition: background-color $transition;
+    color: $primary-bg-color;
+    background: $accent-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+}
+
+.modal__button {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    outline: none;
+    background-color: $primary-bg-color;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+
+
+    &:hover, 
+    &:focus .close-button {
+        fill: $accent-color;
+    }
+}
+
+.close-image {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: fill $transition;
+}
+
+
+.portfolio__button {
+    border-color: transparent;
+    border-radius: 4px;
+    background-color: $secondary-bg-color;
+    padding: 6px 22px;
+    transition: color $transition,
+    background-color $transition;
+
+
+    &:hover,
+    &:focus {
+        color: $primary-bg-color;
+        background-color: $accent-color;
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 
+        0px 1px 2px rgba(0, 0, 0, 0.08), 
+        0px 2px 2px rgba(0, 0, 0, 0.12);
+    }
+}
+
+.portfolio .item:not(:first-child) {
+    margin-left: 8px;
+}
+
+
+
