@@ -268,8 +268,8 @@ summary {
 
 .logo {
   display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   color: #2196F3;
   text-decoration: none;
   font-family: "Raleway";
@@ -373,7 +373,6 @@ summary {
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 1200px;
   padding-right: 15px;
   padding-left: 15px;
 }
@@ -428,6 +427,27 @@ summary {
     width: 44px;
     height: 44px;
 } */
+.menu-button {
+  width: 40px;
+  height: 40px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.menu-button .menu-cross {
+  display: none;
+}
+
+.menu-button.is-open .menu-cross {
+  display: block;
+}
+
+.menu-button.is-open .menu-icon {
+  display: none;
+}
+
 .footer-form__button {
   width: 200px;
   height: 50px;
@@ -442,6 +462,7 @@ summary {
   border: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  margin-top: 20px;
 }
 
 .footer-form__button-icon {
@@ -751,8 +772,16 @@ summary {
   color: #2196F3;
 }
 
+.footer-form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
 .footer-form__input {
-  width: 358px;
+  width: 100%;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
@@ -761,7 +790,6 @@ summary {
   background-color: transparent;
   color: #fff;
   margin-top: 20px;
-  margin-right: 12px;
   padding-left: 16px;
 }
 
@@ -776,7 +804,6 @@ summary {
 }
 
 .page-header {
-  display: flex;
   color: #000000;
   /* border-bottom-width: 3px;
     border-style: solid;
@@ -784,31 +811,29 @@ summary {
 }
 
 .page-header-portfolio {
-  display: flex;
   color: #000000;
   border-bottom: 2px solid #EEEEEE;
 }
 
 .main-nav {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   padding: 0;
 }
 
 .site-nav {
-  display: flex;
   background: #fff;
   margin: 0;
   margin-left: 93px;
   padding: 0;
+  display: none;
 }
 
 .site-nav__list {
   position: relative;
   margin-right: 50px;
   display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
   list-style: none;
   color: #757575;
 }
@@ -850,12 +875,11 @@ summary {
 }
 
 .cont-nav {
-  display: flex;
-  align-items: center;
   padding: 0;
   margin: 0;
   margin-left: auto;
   list-style: none;
+  display: none;
 }
 
 .cont-nav__list:last-child {
@@ -912,7 +936,7 @@ summary {
 
 .hero__title {
   font-weight: 900;
-  font-size: 44px;
+  font-size: 26px;
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -939,26 +963,15 @@ summary {
     margin-left: auto; */
 }
 
-.section {
-  padding: 94px 0px;
-  /* padding-right: 10px;
-    padding-left: auto; */
-}
-
-.section__title {
-  color: #212121;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-  letter-spacing: 0.03em;
-  margin: 0 0 50;
-}
-
 .advantage {
-  display: flex;
   margin: 0;
   padding: 0;
+}
+
+.advantage__list {
+  list-style: none;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 .advantage__title {
@@ -967,6 +980,7 @@ summary {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .advantage__text {
@@ -975,20 +989,9 @@ summary {
   line-height: 1.71;
 }
 
-.advantage__list {
-  width: 270px;
-  margin-left: 30px;
-  list-style: none;
-}
-
-.advantage__list:first-child {
-  margin-left: 0px;
-}
-
 .advantage__item {
   display: flex;
   justify-content: center;
-  width: 270px;
   height: 120px;
   background-color: #F5F4FA;
   margin-bottom: 30px;
@@ -1059,15 +1062,33 @@ summary {
 .list:nth-child(4)::before {
    background-image: url(../images/icon4.png);
 } */
+.section {
+  padding: 60px 0px;
+  /* padding-right: 10px;
+    padding-left: auto; */
+}
+
+.section__title {
+  color: #212121;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin: 0px 0px 50px;
+}
+
+.doing {
+  display: none;
+}
+
 .working {
-  display: flex;
   padding: 0;
   /* padding-bottom: 94px; */
   margin: 0;
 }
 
 .working__list {
-  width: 370px;
   position: relative;
   list-style: none;
 }
@@ -1097,19 +1118,19 @@ summary {
 
 .team {
   background: #F5F4FA;
-  padding-bottom: 94px;
   margin-right: auto;
   margin-left: auto;
+  padding-top: 60px;
 }
 
 .team__list {
   display: flex;
+  flex-direction: column;
   padding: 0;
   margin: 0;
 }
 
 .team__list-piece {
-  width: 270px;
   background-color: #fff;
   text-align: center;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1118,7 +1139,11 @@ summary {
 }
 
 .team__list-piece:not(:last-child) {
-  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.team__list-piece:nth-child(3) {
+  margin-bottom: 60px;
 }
 
 .team__item {
@@ -1134,16 +1159,17 @@ summary {
 
 .clients__list {
   display: flex;
+  flex-wrap: wrap;
   padding: 0;
   margin: 0;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .clients__item {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 170px;
+  width: 210px;
   height: 90px;
   border: 1px solid #AFB1B8;
   box-sizing: border-box;
@@ -1280,9 +1306,10 @@ summary {
 
 .footer__container {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   margin-left: auto;
   margin-right: auto;
-  width: 1200px;
   /* padding-right: 15px;
     padding-left: 15px; */
 }
@@ -1309,7 +1336,10 @@ summary {
 .footer-join {
   color: #fff;
   width: 206px;
-  margin-right: 93px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 60px;
+  text-align: center;
 }
 
 .footer-join__list {
@@ -1340,16 +1370,23 @@ summary {
   background-color: #2196F3;
 }
 
+.footer-info {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
 .footer__contacts {
   display: inline-block;
-  width: 231px;
-  height: 21px;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
-  margin-bottom: 9px;
+  margin-bottom: 8px;
+  margin-left: auto;
+  margin-right: auto;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 

@@ -18,6 +18,12 @@
         <div class="page-header container">
             <nav class="main-nav">
                 <a href="" id="head" lang="en" class="logo">Web<span class="studio-bl">Studio</span></a>
+                <button type="button" class="menu-button is-open" data-menu-button>
+                    <svg width="24" height="16" aria-label="Переключатель мобильного меню">
+                        <use class="menu-icon" href="./images/symbol-defs.svg#mobile-menu"></use>
+                        <use class="menu-cross" href="./images/symbol-defs.svg#menu-close"></use>
+                    </svg>
+                </button>
                 <ul class="site-nav">
                     <li class="site-nav__list"><a href="" class="site-nav__link current">Студия</a></li>
                     <li class="site-nav__list"><a href="./portfolio.html" class="site-nav__link">Портфолио</a></li>
@@ -150,7 +156,7 @@
                 </ul>
         </section>
         <!-- Чем мы занимаемся -->
-        <section class="section">
+        <section class="section doing">
             <div class="container">
                 <h2 class="section__title">Чем мы занимаемся</h2>
                 <ul class="working">
@@ -181,7 +187,7 @@
                 <h2 class="section__title">Наша команда</h2>
                 <ul class="team__list">
                     <li class="team__list-piece">
-                        <img src="./images/human_1.jpg" alt="фото Игоря" width="270" />
+                        <img src="./images/human_1.jpg" alt="фото Игоря" width="100%" />
                         <div class="team__item">
                             <h3 class="team__member">Игорь Демьяненко</h3>
                             <p>Product Designer</p>
@@ -219,7 +225,7 @@
                         </div>
                     </li>
                     <li class="team__list-piece">
-                        <img src="./images/human_2.jpg" alt="фото Ольги" width="270" />
+                        <img src="./images/human_2.jpg" alt="фото Ольги" width="100%" />
                         <div class="team__item">
                             <h3 class="team__member">Ольга Репина</h3>
                             <p>Frontend Developer</p>
@@ -258,7 +264,7 @@
                         </div> 
                     </li>
                     <li class="team__list-piece">
-                        <img src="./images/human_3.jpg" alt="фото Николая" width="270" />
+                        <img src="./images/human_3.jpg" alt="фото Николая" width="100%" />
                         <div class="team__item">
                             <h3 class="team__member">Николай Тарасов</h3>
                             <p>Marketing</p>
@@ -296,7 +302,7 @@
                         </div>
                     </li>
                     <li class="team__list-piece">
-                        <img src="./images/human_4.jpg" alt="фото Михаила" width="270" />
+                        <img src="./images/human_4.jpg" alt="фото Михаила" width="100%" />
                         <div class="team__item">
                             <h3 class="team__member">Михаил Ермаков</h3>
                             <p>UI Designer</p>
@@ -345,27 +351,27 @@
                             </svg>
                     </li>
                     <li class="clients__item list">
-                        <svg class="clients__icon" width="45">
+                        <svg class="clients__icon" width="40">
                             <use href="./images/symbol-defs.svg#icon-client2"></use>
                         </svg>
                     </li>
                     <li class="clients__item list">
-                        <svg class="clients__icon" width="45">
+                        <svg class="clients__icon" width="41">
                             <use href="./images/symbol-defs.svg#icon-client3"></use>
                         </svg>
                     </li>
                     <li class="clients__item list">
-                        <svg class="clients__icon" width="45">
+                        <svg class="clients__icon" width="80">
                             <use href="./images/symbol-defs.svg#icon-client4"></use>
                         </svg>
                     </li>
                     <li class="clients__item list">
-                        <svg class="clients__icon" width="45">
+                        <svg class="clients__icon" width="59">
                             <use href="./images/symbol-defs.svg#icon-client5"></use>
                         </svg>
                     </li>
                     <li class="clients__item list">
-                        <svg class="clients__icon" width="45">
+                        <svg class="clients__icon" width="89">
                             <use href="./images/symbol-defs.svg#icon-client6"></use>
                         </svg>
                     </li>
@@ -375,7 +381,7 @@
     <!-- Подвал -->
     <footer class="footer">
         <div class="footer__container">   
-            <div class="footer__contacts">
+            <div class="footer-info">
                 <a href="#head" lang="en" class="footer-logo">Web<span class="studio-wh">Studio</span></a>
                 <address>
                     <p class="footer-address">г. Киев, пр-т Леси Украинки, 26</p>
@@ -419,9 +425,9 @@
                    </li>
                </ul> 
             </div>
-            <div >
+            <div class="footer-form">
                 <b class="footer-title">подпишитесь на рассылку</b>
-                <form class="footer-form">
+                <form>
                     <input type="email" class="footer-form__input" placeholder="E-mail">
                     <button type="submit" class="footer-form__button">Подписаться
                         <svg class="footer-form__button-icon">

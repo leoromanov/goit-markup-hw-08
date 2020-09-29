@@ -1,5 +1,5 @@
 .page-header {
-    display: flex;
+    // display: flex;
     color: $black-color;
 
     /* border-bottom-width: 3px;
@@ -8,7 +8,7 @@
 }
 
 .page-header-portfolio {
-    display: flex;
+    // display: flex;
     color: $black-color;
     border-bottom: 2px solid $border-color;
 }
@@ -18,18 +18,21 @@
 //     border-bottom: 2px solid $border-color;
 // }
 
-.main-nav { display: flex;
+.main-nav { 
+    display: flex;
+    justify-content: space-between;
     align-items: center;
     padding: 0;
     
 }
 
 .site-nav {
-    display: flex;
+    // display: flex;
     background: $primary-bg-color;
     margin: 0;
     margin-left: 93px;
     padding: 0;
+    display: none;
 }
 
 
@@ -37,8 +40,8 @@
     position: relative;
     margin-right: 50px;
     display: block;
-    padding-top: 32px;
-    padding-bottom: 32px; 
+    // padding-top: 32px;
+    // padding-bottom: 32px; 
     list-style: none;
     color: $text-color;
 
@@ -83,12 +86,13 @@
 
 
 .cont-nav {
-    display: flex;
-    align-items: center;
+    // display: flex;
+    // align-items: center;
     padding: 0;
     margin: 0;
     margin-left: auto;
     list-style: none;
+    display: none;
 }
 
 
