@@ -1,3 +1,7 @@
+.section.clients {
+    padding-bottom: 50px;
+}
+
 .clients__list {
     display: flex;
     flex-wrap: wrap;
@@ -12,6 +16,7 @@
     align-items: center;
     width: 210px;
     height: 90px;
+    margin-bottom: 10px;
     border: 1px solid $network-color;
     box-sizing: border-box;
     border-radius: 4px;

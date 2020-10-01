@@ -1,6 +1,8 @@
 .modal__form {
     width: 448px;
     height: 342px;
+    padding-left: 40px;
+    padding-right: 40px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -10,6 +12,8 @@
     width: 448px;
     padding-top: 25px;
     padding-bottom: 12px;
+    padding-right: 15px;
+    padding-left: 15px;
     font-size: 20px;
     line-height: 23px;
     text-align: center;
@@ -19,7 +23,7 @@
 
 .modal__comment {
     resize: none;
-    width: 448px;
+    width: 100%;
     height: 120px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
@@ -63,7 +67,7 @@
 .modal__input {
     position: relative;
     display: block;
-    width: 448px;
+    width: 100%;
     height: 40px;
     padding-left: 42px;
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -73,6 +77,10 @@
     &:focus {
         outline-color: $accent-color;
     }
+}
+
+.modal__input:focus .modal__icon {
+    fill: $accent-color;
 }
 
 .modal__submit {
@@ -98,9 +106,9 @@
 }
 
 .modal__checkbox-label {
-    width: 423px;
+    // width: 423px;
     height: 24px;
-    font-size: $common-text;
+    font-size: 12px;
     line-height: 24px;
     letter-spacing: 0.03em;
     color: $text-color;
@@ -110,7 +118,7 @@
         content: "";
         position: absolute;
         top: 50%;
-        left: 11px;
+        left: 0;
         transform: translateY(-50%);
         display: block;
         width: 16px;
