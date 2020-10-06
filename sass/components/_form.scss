@@ -73,7 +73,7 @@
     // }
 }
 
-.modal__field:focus .modal__icon {
+.modal__input:focus + .modal__icon {
     fill: $accent-color;
 }
 

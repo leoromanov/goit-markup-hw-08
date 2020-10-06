@@ -406,6 +406,8 @@ body.modal-open {
   background-position: center;
   background-size: cover;
   max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 200px;
   padding-bottom: 200px;
 }
@@ -764,7 +766,7 @@ body.modal-open {
   outline-color: #2196F3;
 }
 
-.modal__field:focus .modal__icon {
+.modal__input:focus + .modal__icon {
   fill: #2196F3;
 }
 
@@ -1020,6 +1022,19 @@ body.modal-open {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .advantage {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .advantage {
+    width: 1170px;
+    flex-wrap: nowrap;
+  }
+}
+
 .advantage__list {
   list-style: none;
   padding-right: 15px;
@@ -1209,14 +1224,24 @@ body.modal-open {
 }
 
 @media screen and (min-width: 768px) {
+  .team__list-piece:nth-child(3) {
+    margin-bottom: 30px;
+  }
   .team__list-piece:nth-child(4) {
-    margin-bottom: 60px;
+    margin-bottom: 30px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .team__list-piece {
     width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team__list-piece {
+    width: 270px;
+    margin-bottom: 0;
   }
 }
 
@@ -1266,6 +1291,12 @@ body.modal-open {
 
 .clients__item:hover, .clients__item:focus {
   border: 1px solid #2196F3;
+}
+
+@media screen and (min-width: 1200px) {
+  .clients__item {
+    width: 170px;
+  }
 }
 
 .port-container {

@@ -37,13 +37,22 @@
     }
 
     @media screen and (min-width: 768px) {
+        &:nth-child(3) {
+            margin-bottom: 30px;
+        }
         &:nth-child(4) {
-            margin-bottom: 60px;
-    }
+            margin-bottom: 30px;
+        }
+        
     }
 
     @media screen and (min-width: 768px) {
         width: 354px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 270px;
+        margin-bottom: 0;
     }
 }
 
