@@ -5,19 +5,20 @@
     padding: 0;
     border: none;
     background-color: transparent;
+
+    & .menu-cross {
+        display: none;
+    }
+
+    &.is-open .menu-cross {
+        display: block;
+    }
+
+    &.is-open .menu-icon {
+        display: none;
+    }
 }
 
-.menu-button .menu-cross {
-    display: none;
-}
-
-.menu-button.is-open .menu-cross {
-    display: block;
-}
-
-.menu-button.is-open .menu-icon {
-    display: none;
-}
 
 .footer-form__button {
     width: 200px;

@@ -18,7 +18,7 @@
         <div class="page-header container">
             <nav class="main-nav">
                 <a href="" id="head" lang="en" class="logo">Web<span class="studio-bl">Studio</span></a>
-                <button type="button" class="menu-button is-open" data-menu-button>
+                <button type="button" class="menu-button" data-menu-button>
                     <svg width="24" height="16" aria-label="Переключатель мобильного меню">
                         <use class="menu-icon" href="./images/symbol-defs.svg#mobile-menu"></use>
                         <use class="menu-cross" href="./images/symbol-defs.svg#menu-close"></use>
@@ -57,12 +57,17 @@
         <main>
             <!-- Герой -->
         <section class="hero">
-            <div class="hero__container">
+            <div class="hero__container container">
                 <h1 class="hero__title">Эффективные решения <br> для вашего бизнеса</h1>
                 <button type="button" class="hero__button" data-modal-open>Заказать услугу</button>    
             </div>
             <div class="backdrop is-hidden" data-modal>
                 <div class="modal">
+                    <button class="modal__button" data-modal-close>
+                        <svg class="close-image">
+                            <use href="./images/symbol-defs.svg#close-black"></use>
+                        </svg>
+                    </button>
                     <b class="modal__title">Оставьте свои данные, мы Вам перезвоним</b>
                     <form class="modal__form">
                         
@@ -105,11 +110,6 @@
                         <button class="modal__submit" type="submit">Отправить</button>
 
                     </form>
-                    <button class="modal__button" data-modal-close>
-                        <svg class="close-image">
-                            <use href="./images/symbol-defs.svg#close-black"></use>
-                        </svg>
-                    </button>
                 </div>
             </div>
         </section>
@@ -380,7 +380,7 @@
         </main>
     <!-- Подвал -->
     <footer class="footer">
-        <div class="footer__container">   
+        <div class="container">   
             <div class="footer-info">
                 <a href="#head" lang="en" class="footer-logo">Web<span class="studio-wh">Studio</span></a>
                 <address>
@@ -440,5 +440,6 @@
     </footer>
     
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 </html>

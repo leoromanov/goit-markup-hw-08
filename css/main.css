@@ -370,11 +370,52 @@ summary {
   margin: 0;
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 .container {
   margin-left: auto;
   margin-right: auto;
   padding-right: 15px;
   padding-left: 15px;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
+.hero__container {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/hero-bcg.jpg");
+  background-color: #2F303A;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  max-width: 1600px;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 .list {
@@ -616,11 +657,10 @@ summary {
 .backdrop {
   position: fixed;
   top: 0;
-  left: 50%;
-  transform: translate(-50%);
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.2);
+  overflow-y: scroll;
 }
 
 .backdrop.is-hidden {
@@ -629,29 +669,27 @@ summary {
 }
 
 .modal {
-  position: absolute;
-  min-height: 581px;
+  position: relative;
+  max-width: 450px;
+  min-height: 609px;
   background: #fff;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  margin-top: 93px;
+  margin-left: auto;
+  margin-right: auto;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
 
-.modal__form {
-  width: 448px;
-  height: 342px;
-  padding-left: 40px;
-  padding-right: 40px;
-  margin-left: auto;
-  margin-right: auto;
+@media (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .modal__title {
   display: inline-block;
-  width: 448px;
-  padding-top: 25px;
+  padding-top: 40px;
   padding-bottom: 12px;
   padding-right: 15px;
   padding-left: 15px;
@@ -659,6 +697,14 @@ summary {
   line-height: 23px;
   text-align: center;
   letter-spacing: 0.03em;
+}
+
+.modal__form {
+  height: 342px;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .modal__comment {
@@ -718,7 +764,7 @@ summary {
   outline-color: #2196F3;
 }
 
-.modal__input:focus .modal__icon {
+.modal__field:focus .modal__icon {
   fill: #2196F3;
 }
 
@@ -784,11 +830,14 @@ summary {
 }
 
 .footer-form {
-  display: flex;
-  flex-direction: column;
   text-align: center;
-  padding-right: 15px;
-  padding-left: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-form {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .footer-form__input {
@@ -958,31 +1007,29 @@ summary {
   margin-bottom: 30px;
 }
 
-.hero__container {
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/hero-bcg.jpg");
-  background-color: #2F303A;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  max-width: 1600px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 200px;
-  padding-bottom: 200px;
-  /* width: 696px;
-    margin-right: auto;
-    margin-left: auto; */
-}
-
 .advantage {
   margin: 0;
   padding: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .advantage {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
 }
 
 .advantage__list {
   list-style: none;
   padding-right: 15px;
   padding-left: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .advantage__list {
+    width: 354px;
+  }
 }
 
 .advantage__title {
@@ -1135,7 +1182,17 @@ summary {
   margin: 0;
 }
 
+@media screen and (min-width: 768px) {
+  .team__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
 .team__list-piece {
+  max-width: 450px;
+  margin-left: auto;
+  margin-right: auto;
   background-color: #fff;
   text-align: center;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1149,6 +1206,18 @@ summary {
 
 .team__list-piece:nth-child(3) {
   margin-bottom: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .team__list-piece:nth-child(4) {
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .team__list-piece {
+    width: 354px;
+  }
 }
 
 .team__item {
@@ -1312,16 +1381,6 @@ summary {
   max-width: 1600px;
   margin-right: auto;
   margin-left: auto;
-}
-
-.footer__container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
-  /* padding-right: 15px;
-    padding-left: 15px; */
 }
 
 .footer-title {
