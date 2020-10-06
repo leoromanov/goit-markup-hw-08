@@ -426,9 +426,13 @@ body.modal-open {
 }
 
 .section {
-  padding: 60px 0px;
+  padding: 94px 0px;
   /* padding-right: 10px;
     padding-left: auto; */
+}
+
+.section.container {
+  padding-bottom: 60px;
 }
 
 .hidden {
@@ -684,8 +688,8 @@ body.modal-open {
 
 @media (min-width: 1200px) {
   .modal {
-    width: 528px;
-    height: 581px;
+    max-width: 528px;
+    min-height: 581px;
   }
 }
 
@@ -835,10 +839,23 @@ body.modal-open {
   text-align: center;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer-form {
     margin-left: auto;
     margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .footer-form {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-form {
+    text-align: start;
   }
 }
 
@@ -863,6 +880,12 @@ body.modal-open {
   align-items: center;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-form__input {
+    width: 358px;
+  }
 }
 
 .page-header {
@@ -1041,9 +1064,32 @@ body.modal-open {
   padding-left: 15px;
 }
 
+@media screen and (max-width: 767px) {
+  .advantage__list {
+    margin-bottom: 30px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .advantage__list {
     width: 354px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .advantage__list:nth-child(1) {
+    margin-bottom: 30px;
+  }
+  .advantage__list:nth-child(2) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .advantage__list {
+    width: 270px;
   }
 }
 
@@ -1060,6 +1106,7 @@ body.modal-open {
   color: #757575;
   font-size: 14px;
   line-height: 1.71;
+  margin: 0;
 }
 
 .advantage__item {
@@ -1149,10 +1196,21 @@ body.modal-open {
   display: none;
 }
 
+@media screen and (min-width: 1200px) {
+  .doing {
+    display: block;
+  }
+}
+
 .working {
   padding: 0;
-  /* padding-bottom: 94px; */
   margin: 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .working {
+    display: flex;
+  }
 }
 
 .working__list {
@@ -1199,6 +1257,7 @@ body.modal-open {
 
 @media screen and (min-width: 768px) {
   .team__list {
+    justify-content: space-between;
     flex-direction: row;
     flex-wrap: wrap;
   }
@@ -1215,33 +1274,35 @@ body.modal-open {
   color: #757575;
 }
 
-.team__list-piece:not(:last-child) {
-  margin-bottom: 30px;
-}
-
-.team__list-piece:nth-child(3) {
-  margin-bottom: 60px;
-}
-
-@media screen and (min-width: 768px) {
-  .team__list-piece:nth-child(3) {
+@media screen and (max-width: 767px) {
+  .team__list-piece:not(:last-child) {
     margin-bottom: 30px;
   }
-  .team__list-piece:nth-child(4) {
-    margin-bottom: 30px;
+  .team__list-piece:nth-child(3) {
+    margin-bottom: 60px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .team__list-piece {
     width: 354px;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .team__list-piece:nth-child(1) {
+    margin-bottom: 30px;
+  }
+  .team__list-piece:nth-child(2) {
+    margin-bottom: 30px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .team__list-piece {
-    width: 270px;
-    margin-bottom: 0;
+    width: calc((100% - 8 * 15px) / 4);
+    margin: 15px;
   }
 }
 
@@ -1407,11 +1468,33 @@ body.modal-open {
 
 .footer {
   background: #2F303A;
-  padding-top: 60px;
-  padding-bottom: 60px;
   max-width: 1600px;
   margin-right: auto;
   margin-left: auto;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer {
+    height: 252px;
+  }
+}
+
+.footer .container {
+  display: flex;
+  padding-top: 60px;
+}
+
+@media screen and (max-width: 767px) {
+  .footer .container {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer .container {
+    justify-content: space-around;
+    align-items: flex-start;
+  }
 }
 
 .footer-title {
@@ -1436,10 +1519,15 @@ body.modal-open {
 .footer-join {
   color: #fff;
   width: 206px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 60px;
   text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  .footer-join {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+  }
 }
 
 .footer-join__list {
@@ -1466,15 +1554,12 @@ body.modal-open {
   margin-right: 10px;
 }
 
-.footer-join__link:hover {
+.footer-join__link:hover, .footer-join__link:focus {
   background-color: #2196F3;
 }
 
 .footer-info {
-  margin-left: auto;
-  margin-right: auto;
   text-align: center;
-  margin-bottom: 60px;
 }
 
 .footer__contacts {
