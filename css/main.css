@@ -406,7 +406,7 @@ img {
 }
 
 .hero__container {
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/hero-bcg.jpg");
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/desktop/hero-bcg.jpg");
   background-color: #2F303A;
   background-repeat: no-repeat;
   background-position: center;
@@ -416,6 +416,12 @@ img {
   margin-right: auto;
   padding-top: 200px;
   padding-bottom: 200px;
+}
+
+@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .hero__container {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/desktop/hero-bcg@2x.jpg");
+  }
 }
 
 @media screen and (min-width: 768px) {

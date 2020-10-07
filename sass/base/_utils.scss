@@ -41,7 +41,7 @@ img {
     background-image: 
     linear-gradient(to right, rgba(0, 0, 0, 0.5), 
     rgba(0, 0, 0, 0.5)), 
-    url("../images/hero-bcg.jpg");
+    url("../images/desktop/hero-bcg.jpg");
     background-color: $footer-color;
     background-repeat: no-repeat;
     background-position: center;
@@ -51,6 +51,15 @@ img {
     margin-right: auto;
     padding-top: 200px;
     padding-bottom: 200px;
+
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+        background-image: 
+        linear-gradient(to right, rgba(0, 0, 0, 0.5), 
+        rgba(0, 0, 0, 0.5)), 
+        url("../images/desktop/hero-bcg@2x.jpg");
+    }
 }
 
 .footer .container {
