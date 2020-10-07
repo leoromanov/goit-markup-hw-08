@@ -576,9 +576,9 @@ img {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .site-nav__link.current::after {
-    bottom: -23.5px;
+    bottom: -23px;
   }
 }
 
