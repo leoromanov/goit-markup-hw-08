@@ -172,6 +172,7 @@
         left: 0;
         width: 100%;
         background-color: $primary-bg-color;
+        z-index: 20;
 
         &.is-open {
             display: block;

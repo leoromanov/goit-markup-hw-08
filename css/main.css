@@ -374,6 +374,12 @@ body.modal-open {
   overflow: hidden;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -665,6 +671,7 @@ body.modal-open {
     left: 0;
     width: 100%;
     background-color: #fff;
+    z-index: 20;
   }
   .mobile-menu.is-open {
     display: block;
@@ -1484,7 +1491,7 @@ body.modal-open {
 .port-container {
   margin-left: auto;
   margin-right: auto;
-  padding-top: 60px;
+  padding-top: 45px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -1505,20 +1512,23 @@ body.modal-open {
   padding: 0;
 }
 
-.portfolio .item:not(:first-child) {
-  margin-left: 8px;
+.portfolio .item {
+  margin-right: 8px;
+  margin-top: 15px;
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .portfolio {
+    width: 480px;
+  }
 }
 
 @media screen and (max-width: 767px) {
   .portfolio {
-    margin: 0 15px;
-  }
-  .portfolio .item:nth-child(4) {
-    margin-top: 15px;
-    margin-left: 0;
-  }
-  .portfolio .item:nth-child(5) {
-    margin-top: 15px;
+    padding: 0 15px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 0;
   }
 }
 
@@ -1546,6 +1556,32 @@ body.modal-open {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.works__list:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.works__list:focus .works__overlay {
+  transform: translateY(0%);
+}
+
+.works__list:hover .works__overlay {
+  transform: translateY(0%);
+}
+
+@media screen and (min-width: 480px) {
+  .works__list {
+    width: 450px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .works__list {
+    width: calc((100% - 4 * 15px) / 2);
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .works__list {
     width: calc((100% - 30px * 2) / 3);
@@ -1560,14 +1596,6 @@ body.modal-open {
   .works__list:nth-last-child(-n+3) {
     margin-bottom: 0px;
   }
-}
-
-.works__list:hover {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-.works__list:hover .works__overlay {
-  transform: translateY(0%);
 }
 
 .works__img {
@@ -1586,15 +1614,19 @@ body.modal-open {
 }
 
 .works__text {
-  position: absolute;
-  top: 63px;
-  left: 24px;
-  right: 24px;
+  padding: 77px 24px;
+  margin: 0;
   font-size: 18px;
   line-height: 28px;
   /* or 156% */
   letter-spacing: 0.03em;
   color: #fff;
+}
+
+@media screen and (min-width: 1200px) {
+  .works__text {
+    position: absolute;
+  }
 }
 
 .works__item {
