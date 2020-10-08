@@ -272,7 +272,7 @@ summary {
   padding-bottom: 16px;
   color: #2196F3;
   text-decoration: none;
-  font-family: "Raleway";
+  font-family: "Raleway", "sans-serif";
   letter-spacing: 0.03em;
   font-weight: 700;
   font-size: 26px;
@@ -283,7 +283,7 @@ summary {
   margin-bottom: 20px;
   color: #2196F3;
   text-decoration: none;
-  font-family: "Raleway";
+  font-family: "Raleway", "sans-serif";
   letter-spacing: 0.03em;
   font-weight: 700;
   font-size: 26px;
@@ -364,7 +364,7 @@ summary {
 }
 
 .body {
-  font-family: "Roboto";
+  font-family: "Roboto", "sans-serif";
   letter-spacing: 0.02em;
   background-color: #fff;
   margin: 0;
