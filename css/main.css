@@ -1552,6 +1552,15 @@ img {
   list-style: none;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .works {
+    width: 738px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+  }
+}
+
 .works__list {
   position: relative;
   width: 100%;
@@ -1574,7 +1583,7 @@ img {
   transform: translateY(0%);
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .works__list {
     width: 450px;
     margin-right: auto;
@@ -1582,9 +1591,10 @@ img {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .works__list {
-    width: calc((100% - 4 * 15px) / 2);
+    width: 354px;
+    margin: 0 0 15px 0;
   }
 }
 
