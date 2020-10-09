@@ -1,7 +1,11 @@
+header {
+    border-bottom: 2px solid $border-color;
+}
+
 .page-header {
     position: relative;
     // display: flex;
-    border-bottom: 2px solid $border-color;
+    
     color: $black-color;
 
     /* border-bottom-width: 3px;

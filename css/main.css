@@ -1109,9 +1109,12 @@ img {
   }
 }
 
+header {
+  border-bottom: 2px solid #EEEEEE;
+}
+
 .page-header {
   position: relative;
-  border-bottom: 2px solid #EEEEEE;
   color: #000000;
   /* border-bottom-width: 3px;
     border-style: solid;
