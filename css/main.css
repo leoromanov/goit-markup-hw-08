@@ -444,7 +444,7 @@ img {
 }
 
 .section.container {
-  padding-bottom: 60px;
+  padding-bottom: 0;
 }
 
 .hidden {
@@ -672,11 +672,12 @@ img {
 @media screen and (max-width: 767px) {
   .mobile-menu {
     display: none;
-    position: absolute;
-    top: 102%;
+    position: fixed;
+    top: 59px;
     left: 0;
     width: 100%;
     background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
     z-index: 20;
   }
   .mobile-menu.is-open {
@@ -1037,6 +1038,18 @@ img {
   border-radius: 2px;
 }
 
+@media screen and (min-width: 1200px) {
+  .modal__checkbox-label::after {
+    left: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal__checkbox-label {
+    font-size: 14px;
+  }
+}
+
 .modal__checkbox:checked + .modal__checkbox-label::after {
   background-color: #2196F3;
   background-image: url("../images/custom_check.svg");
@@ -1048,8 +1061,19 @@ img {
 .modal__accept {
   position: relative;
   display: flex;
-  justify-content: flex-end;
   margin-bottom: 10px;
+}
+
+@media screen and (max-width: 1199px) {
+  .modal__accept {
+    justify-content: flex-end;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal__accept {
+    padding-left: 37px;
+  }
 }
 
 .link--policy {
@@ -1115,10 +1139,18 @@ header {
 
 .page-header {
   position: relative;
+  height: 60px;
   color: #000000;
   /* border-bottom-width: 3px;
     border-style: solid;
     border-color: var(--heading-color) */
+}
+
+.page-header.is-open {
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  background-color: #fff;
 }
 
 .page-header-portfolio {
@@ -1192,6 +1224,8 @@ header {
   .advantage {
     width: 1170px;
     flex-wrap: nowrap;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -1216,10 +1250,7 @@ header {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .advantage__list:nth-child(1) {
-    margin-bottom: 30px;
-  }
-  .advantage__list:nth-child(2) {
+  .advantage__list {
     margin-bottom: 30px;
   }
 }
@@ -1236,7 +1267,12 @@ header {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
-  text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  .advantage__title {
+    text-align: center;
+  }
 }
 
 .advantage__text {
@@ -1578,11 +1614,11 @@ header {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.works__list:focus .works__overlay {
+.works__list .links:hover .works__overlay {
   transform: translateY(0%);
 }
 
-.works__list:hover .works__overlay {
+.works__list .links:focus .works__overlay {
   transform: translateY(0%);
 }
 
@@ -1597,7 +1633,10 @@ header {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .works__list {
     width: 354px;
-    margin: 0 0 15px 0;
+    margin: 0 0 30px 0;
+  }
+  .works__list:first-child {
+    height: 404px;
   }
 }
 
@@ -1642,6 +1681,12 @@ header {
   color: #fff;
 }
 
+@media screen and (max-width: 1199px) {
+  .works__text {
+    padding: 49px 24px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .works__text {
     position: absolute;
@@ -1658,8 +1703,13 @@ header {
   /* identical to box height, or 200% */
   letter-spacing: 0.06em;
   color: #212121;
-  margin-bottom: 24px;
   margin-top: 0;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .works__title {
+    line-height: 36px;
+  }
 }
 
 .works__type {
@@ -1667,12 +1717,12 @@ header {
   font-size: 16px;
   letter-spacing: 0.03em;
   color: #757575;
+  margin: 0;
   /* margin: 4px 0px 20px 24px; */
 }
 
 .footer {
   background: #2F303A;
-  max-width: 1600px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -1723,7 +1773,6 @@ header {
 .footer-join {
   color: #fff;
   width: 206px;
-  text-align: center;
 }
 
 @media screen and (max-width: 767px) {
@@ -1731,6 +1780,12 @@ header {
     margin-left: auto;
     margin-right: auto;
     margin-top: 60px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .footer-join {
+    text-align: center;
   }
 }
 
@@ -1762,8 +1817,10 @@ header {
   background-color: #2196F3;
 }
 
-.footer-info {
-  text-align: center;
+@media screen and (max-width: 1199px) {
+  .footer-info {
+    text-align: center;
+  }
 }
 
 .footer__contacts {
