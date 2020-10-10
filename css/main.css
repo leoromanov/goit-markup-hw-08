@@ -1609,7 +1609,12 @@ header {
   box-shadow: none;
 }
 
-.works__list:hover, .works__list:focus {
+.works__list .links {
+  display: block;
+}
+
+.works__list .links:hover,
+.works__list .links:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
@@ -1680,7 +1685,7 @@ header {
   color: #fff;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 767px) and (max-width: 1199px) {
   .works__text {
     padding: 49px 24px;
   }
@@ -1688,7 +1693,7 @@ header {
 
 @media screen and (min-width: 1200px) {
   .works__text {
-    position: absolute;
+    padding: 63px 24px;
   }
 }
 
