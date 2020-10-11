@@ -39,8 +39,9 @@ img {
 
 .hero__container {
     background-image: 
-    linear-gradient(to right, rgba(0, 0, 0, 0.5), 
-    rgba(0, 0, 0, 0.5)), 
+    linear-gradient(to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)), 
     url("../images/desktop/hero-bcg.jpg");
     background-color: $footer-color;
     background-repeat: no-repeat;

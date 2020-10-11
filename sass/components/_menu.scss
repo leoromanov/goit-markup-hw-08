@@ -149,6 +149,10 @@
         font-size: 18px;
         padding: 0;
     }
+
+    @media screen and (max-width: 1199px) {
+        font-weight: $medium;
+    }
 }
 
 .cont-nav__icon {

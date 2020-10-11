@@ -406,7 +406,7 @@ img {
 }
 
 .hero__container {
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/desktop/hero-bcg.jpg");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/desktop/hero-bcg.jpg");
   background-color: #2F303A;
   background-repeat: no-repeat;
   background-position: center;
@@ -649,6 +649,12 @@ img {
   .cont-nav__item {
     font-size: 18px;
     padding: 0;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .cont-nav__item {
+    font-weight: 500;
   }
 }
 
@@ -1201,6 +1207,12 @@ header {
   color: #fff;
   margin-top: 0;
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+  }
 }
 
 .advantage {
